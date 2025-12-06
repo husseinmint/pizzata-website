@@ -144,6 +144,7 @@ export default function AboutTestimonialSection() {
       handleMobileScroll(); // Initialize
       return () => mobileCarousel.removeEventListener('scroll', handleMobileScroll);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -153,6 +154,7 @@ export default function AboutTestimonialSection() {
       handleDesktopScroll(); // Initialize
       return () => desktopCarousel.removeEventListener('scroll', handleDesktopScroll);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Desktop navigation functions
@@ -345,7 +347,7 @@ export default function AboutTestimonialSection() {
                             wordWrap: 'break-word'
                           }}
                         >
-                          "{testimonial.quote}"
+                          &quot;{testimonial.quote}&quot;
                         </h3>
                         
                         {/* Author */}
@@ -674,7 +676,7 @@ export default function AboutTestimonialSection() {
                             wordWrap: 'break-word'
                           }}
                         >
-                          "{testimonial.quote}"
+                          &quot;{testimonial.quote}&quot;
                         </h3>
                         
                         {/* Author */}

@@ -25,7 +25,7 @@ export default function AboutStickySection() {
           className="text-[#ffedd8] text-[32px] sm:text-[40px] leading-[40px] sm:leading-[44px] tracking-[-0.04em] capitalize font-normal font-forum"
           style={{ fontFamily: 'var(--font-forum), sans-serif' }}
         >
-          Pizzata Isn't Just About Food — It's a Cultural Experience
+          Pizzata Isn&apos;t Just About Food — It&apos;s a Cultural Experience
         </h2>
         
         {/* Paragraph */}
@@ -33,7 +33,7 @@ export default function AboutStickySection() {
           className="text-[#ffedd8] text-lg leading-[26px] tracking-[0.01em] font-normal"
           style={{ fontFamily: 'var(--font-inter), sans-serif' }}
         >
-          Experience Italian cuisine at its finest. Whether you're a pizza lover, an adventurous foodie, or simply looking for a place to enjoy authentic flavors, Pizzata is here to serve up something extraordinary.
+          Experience Italian cuisine at its finest. Whether you&apos;re a pizza lover, an adventurous foodie, or simply looking for a place to enjoy authentic flavors, Pizzata is here to serve up something extraordinary.
         </p>
       </motion.div>
 

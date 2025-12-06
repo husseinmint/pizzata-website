@@ -1,14 +1,18 @@
+import Image from "next/image";
+
 export default function RolledToPerfectionSection() {
   return (
     <section className="relative w-full bg-[#0c0a10]">
       {/* Image Container */}
       <div className="relative w-full aspect-[4096/2032] overflow-hidden">
         {/* Background Image */}
-        <img
+        <Image
           src="/9e3e752442a325fa5b2b1e602e6ffab9-removebg-preview.png"
           alt="Pizza"
-          className="w-full h-full object-cover"
-          loading="lazy"
+          fill
+          className="object-cover"
+          quality={90}
+          sizes="100vw"
         />
         
         {/* Text Overlay - Upper Left Quadrant */}

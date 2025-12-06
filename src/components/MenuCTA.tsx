@@ -44,7 +44,7 @@ export function MenuCTA() {
             textAlign: 'left'
           }}
         >
-          Chef's picks
+          Chef&apos;s picks
         </h2>
 
         {/* Pizza Cards */}

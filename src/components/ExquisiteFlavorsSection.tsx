@@ -53,7 +53,7 @@ export default function ExquisiteFlavorsSection() {
 
         {/* Tagline */}
         <p className="text-[#FFEED9] text-[18px] md:text-[22px] leading-[28px] md:leading-[34px] font-normal max-w-[600px] opacity-90">
-          Holier is more than just food—it's a celebration of culinary passion, crafted from an inspiring journey.
+          Holier is more than just food—it&apos;s a celebration of culinary passion, crafted from an inspiring journey.
         </p>
 
         {/* Learn More Button */}

@@ -25,7 +25,7 @@ export default function AboutIntroSection() {
           className="text-[#ffedd8] text-[18px] sm:text-[22px] leading-[28px] sm:leading-[34px] font-normal"
           style={{ fontFamily: 'var(--font-inter), sans-serif' }}
         >
-          At Pizzata, pizza is more than just food—it's an expression of craftsmanship. Every pie is meticulously prepared with the finest ingredients, ensuring a perfect balance of flavor, texture, and presentation. Our chefs bring years of passion to the table, transforming simple ingredients into edible works of art.
+          At Pizzata, pizza is more than just food—it&apos;s an expression of craftsmanship. Every pie is meticulously prepared with the finest ingredients, ensuring a perfect balance of flavor, texture, and presentation. Our chefs bring years of passion to the table, transforming simple ingredients into edible works of art.
         </p>
       </motion.div>
     </section>
