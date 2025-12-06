@@ -26,11 +26,6 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   poweredByHeader: false,
   
-  // Experimental features for better performance
-  experimental: {
-    optimizeCss: true,
-  },
-  
   // Headers for caching and security
   async headers() {
     return [
