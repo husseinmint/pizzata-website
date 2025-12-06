@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pizzata.com/sitemap.xml
+
+# Disallow admin and private areas if any
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0a10;
+  --foreground: #FFEED9;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-forum {
+  font-family: var(--font-forum), sans-serif;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-100% / 2));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+  will-change: transform;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+/* Framer carousel scrollbar hiding */
+@media (pointer: fine) {
+  .framer--carousel[data-show-scrollbar="false"]::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+
+  .framer--carousel[data-show-scrollbar="false"]::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  .framer--carousel[data-show-scrollbar="false"] {
+    scrollbar-width: none;
+    scrollbar-height: none;
+  }
+}
+
+.framer--carousel {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Force hide mobile carousel on desktop - override inline styles */
+@media (min-width: 768px) {
+  section[aria-roledescription="carousel"].md\:hidden,
+  section[aria-roledescription="carousel"][class*="md:hidden"] {
+    display: none !important;
+  }
+}
+
+/* 3D Flip Card Styles */
+.perspective-1000 {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
