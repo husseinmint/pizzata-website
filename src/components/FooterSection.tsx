@@ -53,7 +53,7 @@ export default function FooterSection() {
             className="text-[#73747d] text-[10px] sm:text-xs font-normal text-center"
             style={{ fontFamily: 'Inter, sans-serif', lineHeight: '16px', letterSpacing: '0em' }}
           >
-            © 2088 Pizzata
+            © 2088 PIZZATA
           </p>
         </div>
       </div>
